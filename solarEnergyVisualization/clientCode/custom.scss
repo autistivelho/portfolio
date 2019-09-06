@@ -1,0 +1,59 @@
+@import '~bootstrap/scss/bootstrap';
+
+$basic-font: "Quicksand", sans-serif;
+
+$background-white: #dddddd;
+$saimaa-blue: #00a5d0;
+$ese-green: #80bd26;
+$ese-purple: #60177b;
+
+$test-color: #222222;
+
+$card-3d-shadow: #dddddd 0px 5px 0px 0px;
+$card-drop-shadow: #888888 0px 8px 15px 0px;
+
+.container-fluid {
+  min-height: 100vh;
+}
+
+.container-fluid {
+  background-color: $background-white;
+  font-family: $basic-font;
+}
+
+.jumbotron {
+  background-color: $saimaa-blue;
+  box-shadow: #0c95b8 0px 6px 0px 0px,#888888 0px 2px 10px 10px;
+}
+
+.header-spacer {
+  width: 15%;
+}
+
+.header {
+  background-image: url("../data/images/saimaa_stadium_logo.png");
+  background-repeat: no-repeat;
+}
+
+.title-text {
+  @extend .display-4;
+  color: white;
+  font-weight: 400;
+}
+
+.statistics-card {
+  @extend .card;
+  width: 33%;
+  padding: 3rem;
+  margin: 0 1rem;
+  box-shadow: $card-3d-shadow, $card-drop-shadow;
+}
+
+.line-chart-card {
+  @extend .statistics-card;
+  padding-bottom: 1rem;
+}
+
+.value-text {
+  color: $ese-green;
+}
